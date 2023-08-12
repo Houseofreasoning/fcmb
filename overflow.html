@@ -1,0 +1,140 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>class2</title>
+        <style type="text/css">
+    .over{ width: 300px;
+           height: 500px;
+            overflow-y: hidden;
+            overflow-x: scroll;}
+    button{cursor: pointer;}
+    .input{cursor: crosshair;}
+      /*UNIVERSAL SELECTOR*/
+      .forchild{text-transform: uppercase; background-color: grey;}
+      /*CHILD SELECTOR*/
+      .forchild>button{
+        background-color: gold;
+        padding: 10px;
+        border: none;
+        border-radius: 10px 0px;
+      }
+      /*DESCENDANT SELECTOR*/
+      .fordes{ background-color: gold;text-transform: uppercase;}
+      .fordes button{background-color: rgb(255, 72, 0);
+       padding: 10px;
+       border: none;
+       border-radius: 0 10px;}
+     /*GROUPING SELECTOR*/
+      h1,p,input{ 
+        font-size: 20px;
+      }
+      /*MULTIPLE STYLE SELECTOR*/
+      .fordes~p{
+        color:red;}
+
+      .fordes+p{
+        color: red;
+      }
+
+      .forchild+p{
+        color:green;
+      }
+
+      /*PSUEDO CLASS AND SELECTOR*/
+      .forsue button:hover{background-color: blue;margin: 0px 10px; padding: 10px;}
+      .forsue button:nth-child(even){background-color:gold;}
+      .forsue button:nth-child(odd){background-color:purple;}
+      .forsue button:first-child{background-color:green;}
+      .forsue button:last-child{background-color:red;}
+      .forsue button::first-letter{background-color:brown;}
+
+
+        </style>
+    </head
+    <body>
+        <div class="over">
+        <img src="Lark Player.jpg"/>
+        </div><br><br>
+
+        <button>LOGIN</button> <br><br>
+        <input type="text" name="name" class="input" />
+        <a href="#">CLICK ME</a>
+
+
+        <div class="forchild">
+            <button>
+                LOGIN AND OUT
+            </button>
+            <div>
+                <div>
+                    <p>Hey, my name is Michael, and there's little I find more exciting<br>than bears! I've spent most of my young life traveling to the 
+                        edges of Earth to take videos of these wonderful creatures.
+                    </p>
+                    <button>
+                        LOGIN
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <p>Hey, my name is Michael, and there's little I find more exciting<br>than bears! I've spent most of my young life traveling to the 
+                        edges of Earth to take videos of these wonderful creatures.
+        </p>
+
+        <h1>SELECTORS</h1>
+
+        <p>Hey, my name is Michael, and there's little I find more exciting<br>than bears! I've spent most of my young life traveling to the 
+            edges of Earth to take videos of these wonderful creatures.
+        </p>
+
+        <div class="fordes">
+            <button>
+                LOGIN AND OUT
+            </button>
+            <div>
+                <div>
+                    <p>Hey, my name is Michael, and there's little I find more exciting<br>than bears! I've spent most of my young life traveling to the 
+                        edges of Earth to take videos of these wonderful creatures.
+                    </p>
+                    <button>
+                        LOGIN
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <p>Hey, my name is Michael, and there's little I find more exciting<br>than bears! I've spent most of my young life traveling to the 
+                        edges of Earth to take videos of these wonderful creatures.
+        </p>
+
+        <!--PSUEDO CLASS AND SELECTOR-->
+        <div class="forsue">
+            <button>LOGIN</button>
+            <button>LOGIN</button>
+            <button>LOGIN</button>
+            <button>LOGIN</button>
+            <button>LOGIN</button>
+        </div>
+         
+        <div class="forexample">
+            <h1>Why Choose Smile</h1>
+
+            <div>
+                <img src="ether" alt="">
+                <h3>Best 4G Network</h3>
+                <p>
+                  Enjoy Super fast internet accross Nigeria with 4G LTE
+                </p>
+            </div>
+        </div>
+
+        <!--Types of Selectors
+            ID selector
+            Universal selector
+            Class Selector
+            Child Selector
+            Descendant Selector
+            Grouping Selector and multiple type selector-->
+
+    </body>
+</html>
