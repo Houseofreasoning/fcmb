@@ -1,179 +1,112 @@
-<!Doctype html>
+<!DOCTYPE html>
 <html>
     <head>
-        <title>fcmb</title>
+        <title>
+          Smile
+        </title>
         <style type="text/css">
-        .logo{margin-left: 110px;} .loc1{background-color: purple;height: 40px;width: 100%;} 
-        .lock{margin-left: 2px;margin-bottom: -15px;} 
-        .loc2{background-color:goldenrod;width: 300px;height: 40px; margin-left: 145px;font-size: 15px;}
-        .bus{margin-top: -8px;margin-left: 24px;font-family: sans-serif;font-weight: lighter;}
-        .onl{background-color:gold;width: 2px;height: 75px;margin-left: 110px;}
-        .wel{margin-left: 112px;margin-top: -80px;font-weight: lighter;color:grey; font-family: system-ui, -apple-system, BlinkMacSystemFont,
-             'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;font-size:small;}
-        .line{margin-left: 112px;margin-top: -19px;font-family: system-ui, -apple-system, BlinkMacSystemFont,
-             'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;font-size: 40px;font-weight: 500;}
-        .your{margin-left: 112px;margin-top: -53px;color: gray;font-family: system-ui, -apple-system, BlinkMacSystemFont,
-             'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;}
-        .ses{margin-left: 112px;color:rgba(216, 20, 20, 0.904);font-family: system-ui, -apple-system, BlinkMacSystemFont,
-             'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;font-size: 14px;font-weight: 500;}
-        .text,.pa{width: 90%;display: block;padding: 5px;border: 1px solid gray;}
-        .login{color: gray;font-family: system-ui, -apple-system, BlinkMacSystemFont,
-             'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;font-size: 15px;}
-        .pass{color: gray;font-family: system-ui, -apple-system, BlinkMacSystemFont,
-             'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;font-size: 14px;}
-        span{color: gray;}
-        .submit{background-color: gold;padding: 10px;border-radius: 9px;width: 69px;font-family: system-ui, -apple-system, BlinkMacSystemFont,
-             'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;font-weight:bold;
-             font-size: 15px;border: none;}
-        .reg{color: aqua;font-size: 18px; margin-top: -1000px; text-decoration: none;}
-        .di{margin-left: 118px;width: 334px;height: 188px;margin-top: -265px;border-radius: 7px;background-color:white;}
-        .form{margin-left: 122px;width: 320px; height: 240px; margin-top: -169px;}
-        .fo{margin-left: 110px;background-color: purple;height: 271px;width: 349px;margin-top: 9px;}
-        .fcmba{margin-left: 348px;margin-top: -6px;}
-        .ig{margin-left: 824px;background-color: whitesmoke;height: 273px;width: 349px;margin-top: -284px;border-radius: 7px;}
-        .cl{margin-left: 833px;margin-top: -259px;color: gray;}
-        .hav{font-family:system-ui, -apple-system, BlinkMacSystemFont,
-             'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open fonSans', 'Helvetica Neue', sans-serif; font-size: 20px;color: black;
-          font-weight: 500;}
-        .ing{font-family:system-ui, -apple-system, BlinkMacSystemFont,
-             'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 20px;color: gray;
-          font-weight: 500;}
-        .hoe{font-family:system-ui, -apple-system, BlinkMacSystemFont,
-             'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 20px;color: black;
-          font-weight: 500;}     
-        .pd{margin-left: 281px;margin-top: 119px;}
-        .sub{background-color: gold;height:39px;width: 145px;font-family: system-ui, -apple-system, BlinkMacSystemFont,
-             'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;font-weight:bold;font-size: 15px;
-             margin-left: 196px;margin-top: 45px;padding: 10px;border-radius: 7px;border: none;}
-        .put{margin-left: 450px;background-color:gold;height: 159px;width: 201px;}
-        .pt{font-weight: bold; font-size: 19px;margin-left: 457px;margin-top: -100px;}
-        .hs{margin-left: 241px;margin-bottom: -35px;} .br{margin-left: 650px;margin-top: -81px;}
-        .ms{margin-left: 419px; margin-top: -31px;}
-        .online{margin-left: 817px; margin-top: -87px;}
-        .ph{margin-left: 599px;margin-top: -99px;}
-        .tele{margin-left: 1008px;margin-top: -141px;}
-        .li{color: black;font-family: system-ui, -apple-system, BlinkMacSystemFont,
-          'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;font-size: 15px;}
-        .cap{color:blue; margin-left: 800px;font-size: 19px;}
-        .end{background-color:rgb(41, 40, 40); height: 75px;}
-        .d{margin-top:-45px;color:white;text-align: center;font-size: 14px;font-weight: lighter;}
-        .ic{font-size: 28px; color:black; background-color:gold;border-radius: 10px;} 
-        .ic:hover{color:green;font-size: 35px;}
-        .m{font-size: 28px; color:black; background-color:gold;border-radius: 10px;} 
-        .m:hover{color:green;font-size: 35px;}
-        .ln{display: inline;}
+          body{background-color: greenyellow;}
 
-        .disclaimer{background-color:rgb(41, 40, 40);
+          div{background-color: greenyellow;}
+
+          h1{text-align: center;}
+
+          h3{margin-bottom: -4px;}
+
+          .gd{display:flex; flex-direction: row;
+          justify-content: space-around;
+          align-items: center;}
+          
+          .d1{display: flex;
+          flex-direction: column;
+          align-items: center;}
+          
+          .d1>button{
+          background-color: goldenrod; 
+          border-radius: 3px; 
+          padding: 5px;
+          font-size: 13px;
+          border: none;}
+
+          p{text-align: center;}
+
+         .ic{font-size: 28px; color:black; background-color:gold;border-radius: 10px;} 
+         .ic:hover{color:green;font-size: 35px;}
+         .m{font-size: 28px; color:black; background-color:gold;border-radius: 10px;} 
+         .m:hover{color:green;font-size: 35px;}
+         .ln{display: inline;}
+         .disclaimer{background-color:rgb(41, 40, 40);
           padding: 10px;text-align: center;font-size: 14px;color:white;font-weight: lighter;}
         </style>
+
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    </head>
+
+      </head>
     <body>
-          <footer class="disclaimer">
-               <marquee><p>This webpage is created for educational purpose(a student project) and  
-                    is not intended to clone or replicate any existing website.</p></marquee>
-          </footer><br>
-          click to go to the next page <i class="fa fa-arrow-right"></i>
-          <ul class="ln">
-               <li class="ln"><a href="index.html" class="ic">Fcmb</a></li>
-               <li class="ln"><a href="icons.html" class="ic">Icons Class</a></li>
-               <li class="ln"></li><a href="smile.html" class="m">Smile</a></li>
-               <li class="ln"></li><a href="Draft.html" class="m">Draft</a></li>
-               <li class="ln"></li><a href="ludo.html" class="m">Ludo</a></li>
-          </ul><br><br>
-        <div class="log">
-           <img src="logo.png" class="logo" />
-        </div><br>
-
-        <div class="loc1">
-            <div class="loc2">
-              <img src="lock.png" class="lock" /> <p class="bus">Online Bussiness Banking</p> 
-            </div>
-        </div><br>
-        
+      <footer class="disclaimer">
+        <marquee>
+          <p>
+            This webpage is created for educational purpose(a student project) and  
+            is not intended to clone or replicate any existing website.
+          </p>
+        </marquee>
+      </footer><br>
+      click to go to the next page <i class="fa fa-arrow-right"></i>
+      <ul class="ln">
+        <li class="ln"></li><a href="index.html" class="m">Smile</a></li>
+        <li class="ln"><a href="Fcmb.html" class="ic">Fcmb</a></li>
+        <li class="ln"><a href="icons.html" class="ic">Icons Class</a></li>
+        <li class="ln"></li><a href="Draft.html" class="m">Draft</a></li>
+        <li class="ln"></li><a href="ludo.html" class="m">Ludo</a></li>
+        <li class="ln"></li><a href="Transition and Animation.html" class="m">Animation</a></li>
+   </ul><br><br>
         <div>
-            <div class="onl">
+          <h1>
+            Why Choose Smile? 
+          </h1>
+            <div class="gd">
+              <div class="d1">
+                <img src="antenna.png" height="40"/>
+                <h3>Best 4G Network</h3>
+                <p>
+                  Enjoy Superfast internet across Nigeria with 4G<br>
+                  LTE data and SuperClear voice services
+                </p>
+                <button>
+                  Know More
+                </button>
+              </div>
+
+              <div class="d1">
+                <img src="open.png" height="40"/>
+                <h3>24x7 Help & Support</h3>
+                <p>
+                  Our virtual chat assistant & Customer care service is<br>
+                  available to help you 24/7
+                </p>
+                <button>
+                  Know More
+                </button>
+              </div>
+               
+              <div class="d1">
+                <i class="fa fa-thumbs-up"></i>
+                <img src="antenna.png" height="40"/>
+                <h3>BestValue</h3>
+                <p>
+                  Get the BestValue for your money our Data and<br>
+                  Voice services
+                </p>
+                <button>
+                  Know More
+                </button>
+              </div>
 
             </div>
-
-            <p class="wel">Welcome to</p><br>
-            <p class="line">FCMB Online</p><br>
-            <p class="your"> Your user ID and password are confidential NEVER disclose them to anyone</p>
+          </div>
         </div>
 
-        <p class="ses"> Your session Timed out kindly login again to use this application</p>
-        
-        <div class="fo">
-            
-        </div>
-        
-        <div class="di">
-           <img src="fcmba.png" height="271px" width="349px" class="fcmba" />
-        </div>
 
-        <form class="form">
-               <label for="name" class="login">Login Name</label><br>
-               <input type="text" id="name" name="name" class="text"/>
 
-               <label for="password" class="pass">Password</label><br>
-               <input type="password" id="password" name="password" class="pa" />
-
-               <input type="checkbox" name="checkbox"/><span>remember me on this computer</span><br>
-               <input type="submit" value="Login" class="submit"/> <a class="reg" href="#">click here to register</a>
-        </form><br >
-
-        <div class="ig">
-               <img src="pad.png" height="37" class="pd" />
-               <input type="submit" value="Find out more" class="sub"/>
-        </div>
-        <p class="cl"> <span class="hav">Having Trouble</span> <em class="ing">Signing in?</em><br>
-          call us or send e-mail<br>
-          E-mail: Customer service@fcmb.com<br>
-          Telephone:07098765432 or 01-0984454<br><br>
-          <span class="hoe">How to Secure your account</span><br>
-          Fcmb will never solicit your personal or<br>security<br>
-          information by e-mail or by phone please refer to<br>our security page
-       </p><br><br><br><br><br>
-
-       <div class="put">
-          <img src = "home.png" height="48" class="hs"/>
-          <img src="mouse.png" height="37" class="ms"/>
-          <img src="phone.png" height="48" class="ph"/>
-       </div>
-       
-       <p class="pt"> Putting your Banking<br>needs first</p> 
-
-       
-       <ul class="br">
-          <li class="li">Where to find a <br>branch</li>
-          <li class="li">Where to find ATM</li>
-       </ul>
-       
-       <ul class="online">
-          <li class="li">Opening an <br>account online</li>
-          <li class="li">Make payment <br>online</li>
-          <li class="li">E-statements</li>
-          <li class="li">How to use <br>internet banking</li>
-       </ul>
-
-       <ul class="tele">
-          <li class="li">Telephone banking</li>
-          <li class="=li">Send us feedback <br>by mail</li>
-       </ul><br><br>
-
-        <div class="net">
-          <p class="cap">connect with us:<img src="live.jpg"/> <img src="facebook.jpg"/> <img src="twitter.png"/> <img src="linkedin.jpg"/> 
-      <img src="youtube.jpg"/> <img src="gplus.jpg"/></p>
-        </div>
-        
-        <div class="end">
-               
-        </div>
-
-        <p class="d">
-               This site ensures that all the information sent to us via the World Wide Web are encrypted. You can confirm the information provided
-               by our certificate issuer by clicking on the padlock on your icon address bar 2019.First city
-               monument bank plc.A member of first city Groups
-       </p>
     </body>
 </html>

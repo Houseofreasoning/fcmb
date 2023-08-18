@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Animation and Transition</title>
+        <style>
+            @keyframes ram{
+                from{
+
+                    background: red;
+                    padding: 10px;
+                }
+
+                to{
+                    background: green;
+                    padding: 30px;
+                } 
+                0%{
+                    margin: 0px;
+                }
+
+                25%{
+                    margin-top: 0px;
+                    margin-left: 600px;
+                    border-radius: 0px 28px 0px 8px;
+                }
+
+                50%{
+                    margin-top:600px;
+                    margin-left: 600px;
+                    border-radius: 0px 28px 28px 0px;
+                }
+
+                75%{
+                    margin-top: 600px;
+                    margin-left: 0px;
+                    border-radius: 88px 88px 88px 88px;
+
+                }
+
+                100%{
+                    margin: 0px;
+                }
+         
+            }
+
+            button{
+                animation-name: ram;
+                animation-duration: 4s;
+                animation-timing-function: ease-in-out;
+                animation-delay: 0s;
+                animation-iteration-count: infinite;
+                animation-direction: forwards;
+                background-color: yellow;
+            }
+
+             /*  from{
+
+                    background: red;
+                    padding: 20px;
+                    margin: 0px;
+                }
+
+                to{
+                    background: green;
+                    padding: 40px;
+                    margin-left: 600px;
+                } */
+
+            /*button{
+                animation-name: ram;
+                animation-duration: 1s;
+                animation-timing-function: ease-in-out;
+                animation-delay: 0s;
+                animation-iteration-count: infinite;
+                animation-direction: alternate;
+                background-color: yellow;
+            }*/
+
+
+        </style>
+    </head>
+    <body>
+        <button>
+            click me
+        </button>
+
+    </body>
+</html>

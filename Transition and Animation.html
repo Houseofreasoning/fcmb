@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition and Animation</title>
+    <style>
+        @keyframes man {
+            to{
+
+                margin: 0px;
+                transform: rotate(360deg);
+                margin-left: 550px;
+                background-color: black;
+            }
+
+            from{
+
+                margin-top:500px;
+                margin-left: 550px;
+                background-color: white;
+            }
+         
+        }
+
+        img{
+            animation-name: man;
+            animation-duration: 2s;
+            animation-timing-function: ease-in-out;
+            animation-delay: 0s;
+            animation-iteration-count: infinite;
+            animation-direction: forwards;
+        }
+        
+        .ic{font-size: 28px; color:black; background-color:gold;border-radius: 10px;} 
+        .ic:hover{color:green;font-size: 35px;}
+        .m{font-size: 28px; color:black; background-color:gold;border-radius: 10px;} 
+        .m:hover{color:green;font-size: 35px;}
+        .ln{display: inline;}
+    </style>
+</head>
+<body>
+    click to go to the next page <i class="fa fa-arrow-right"></i>
+      <ul class="ln">
+        <li class="ln"></li><a href="index.html" class="m">Smile</a></li>
+        <li class="ln"><a href="Fcmb.html" class="ic">Fcmb</a></li>
+        <li class="ln"><a href="icons.html" class="ic">Icons Class</a></li>
+        <li class="ln"></li><a href="Draft.html" class="m">Draft</a></li>
+        <li class="ln"></li><a href="ludo.html" class="m">Ludo</a></li>
+        <li class="ln"></li><a href="Transition and Animation.html" class="m">Animation</a></li>
+   </ul><br><br>
+    <img src="dice.jpeg"/>
+</body>
+</html>
